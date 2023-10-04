@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
+import Link from "next/link";
+import { LinkArrow } from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -18,13 +20,30 @@ export default function Home() {
               <Image className="w-full h-auto" src={profilePic} alt="myImage" />
             </div>
             <div className="w-1/2 flex flex-col self-center">
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl text-left" />
-              <p>
+              <AnimatedText
+                text="Turning Vision Into Reality With Code And Design."
+                className="!text-6xl text-left"
+              />
+              <p className="py-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
+              <div className="flex items-center self-start gap-4 mt-2">
+                <Link
+                  href="/Yeasin_Arafat_FE_Dev_4Yeasr.pdf"
+                  className="bg-dark text-light text-lg font-semibold flex items-center gap-2 py-2.5 px-6 rounded-lg border border-solid border-transparent transition-all hover:bg-light hover:text-dark hover:border-dark"
+                  target="_blank"
+                  download={true}
+                >
+                  Resume
+                  <LinkArrow className={'w-6'} />
+                </Link>
+                <Link href="mailto:ayeasin108@gmail.com" className="text-dark text-lg font-medium capitalize underline" target="_blank">
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         </Layout>
