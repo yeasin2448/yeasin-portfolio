@@ -4,11 +4,18 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer>
-      <Layout>
-        <span>Right</span>
-        <Link href="/">Yeasin AR</Link>
-        <Link href="/">Say Hello</Link>
+    <footer className="w-full border-t-2 border-solid border-dark text-lg font-medium">
+      <Layout className="flex items-center justify-between gap-2 py-8">
+        <span>{new Date().getFullYear()} &copy; All Right reserved</span>
+        <div className="flex items-center gap-2">
+          Build With
+          <span className="text-primary text-2xl">&#9825;</span>
+          by &nbsp;
+          <Link href="https://jsydesignx.com" target="_blank" className="underline underline-offset-3">
+            jsydesignX
+          </Link>
+        </div>
+        <Link  href="https://www.messenger.com/t/100002541272108" target="_blank" className="underline underline-offset-3">Say Hello</Link>
       </Layout>
     </footer>
   );
