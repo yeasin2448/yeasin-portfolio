@@ -27,7 +27,7 @@ const NavBar = () => {
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="mx-4" />
-        <CustomLink href="/articals" title="Articals" className="ml-2" />
+        <CustomLink href="/articles" title="Articles" className="ml-2" />
       </nav>
       <div className="absolute top-2 left-1/2 -translate-x-1/2">
         <Logo />
