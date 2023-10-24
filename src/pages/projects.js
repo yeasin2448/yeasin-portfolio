@@ -6,6 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -16,7 +19,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary font-medium text-xl">{type}</span>
@@ -28,7 +37,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
         <p className="my-2 font-medium text-dark">{summary}</p>
-        <div className="mt-2 flex items-center">
+        <div className="mt-2 flex items-center gap-2">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
           </Link>
@@ -54,7 +63,13 @@ const FeaturedProject2 = ({ type, title, img, link, github }) => {
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
       <div className="w-full flex flex-col items-start justify-between">
         <span className="text-primary font-medium text-xl">{type}</span>
