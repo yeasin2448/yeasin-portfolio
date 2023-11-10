@@ -94,7 +94,7 @@ const NavBar = () => {
         </nav>
         <nav className="flex flex-wrap items-center justify-center gap-5">
           <motion.a
-            href="https://www.linkedin.com/in/yeasin-arafat-b0bb54237/"
+            href="https://twitter.com/yeasinaraf20"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -103,7 +103,7 @@ const NavBar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/yeasin-arafat-b0bb54237/"
+            href="https://github.com/yeasin2448"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -130,7 +130,7 @@ const NavBar = () => {
             <PinterestIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/yeasin-arafat-b0bb54237/"
+            href="https://www.upwork.com/freelancers/~016cfa1a01c86c49fc"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
